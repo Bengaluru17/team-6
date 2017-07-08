@@ -17,12 +17,13 @@
          <div class="row">
           <div class="col-xs-6">
             <div class="box">
-              <p>Name of school:Delhi public school</p>
-              <p>Name of student:Rihav kumar</p>
-              <p>class:3 section:b</p>
-              <p>Blood group: O+ve</p>
-              <p>Fathers name:Rajiv sharma</p>
-              <p>Address:#621,21st cross,kumarswamylayout,bangalore 560078.</p>
+              <p><b>Name of school</b>:Delhi public school</p><br/><br/><br/>
+              <p><b>Name of student</b>:Rihav kumar</p><br/><br/><br/>
+              <p><b>class:</b>3 </p><br/><br/>
+			  <p><b>section</b>:b</p><br/><br/><br/>
+              <p><b>Blood group</b>: O+ve</p><br/><br/><br/>
+              <p><b>Fathers name</b>:Rajiv sharma</p><br/><br/>
+              <p><b>Address</b>:#621,21st cross,kumarswamylayout,bangalore 560078.</p>
             </div>
           </div>
             <div class="col-xs-6">
@@ -50,10 +51,10 @@
                   </div>
                   <div class="form-group">
                     <label for="Father's name">Father's Name</label>
-                    <input type="text" class="form-control" placeholder="Name of Student">
+                    <input type="text" class="form-control" placeholder="Father's Name">
                   </div>
                   <div class="form-group">
-                    <label for="Address">Father's Name</label>
+                    <label for="Address">Address</label>
                     <input type="text" class="form-control" placeholder="Address">
                   </div>
                   <button type="button" name="button">Submit</button>
