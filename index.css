@@ -1,7 +1,9 @@
+body{
+  background-color: gray;
+}
 .box{
   border: solid black 2px;
   height: auto;;
   width:auto;
   padding: 10px;
-  background-color: gray;
 }
