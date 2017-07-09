@@ -34,7 +34,7 @@ console.log(string1);
 <body background="letters.jpg" onload="ranWord()">
 
 <div class="container">
-    <h2 align="center"><font color="red">Typing test</font></h2>
+    <h2 align="center"><font color="red">Let's start typing!</font></h2>
   <form class="form-horizontal" action="/action_page.php" id="myform">
     <div class="form-group">
       <label class="control-label col-sm-2" for="email"><script type="text/javascript">
@@ -43,6 +43,7 @@ console.log(string1);
       <div class="col-sm-10">
       <input type="email" class="form-control" id="email" name="email" onKeyPress="checkCapsLock(event)">
 
+      <p id="result_status1"> </p>
 
       </div>
     </div>
@@ -52,7 +53,7 @@ console.log(string1);
         </script></label>
       <div class="col-sm-10">
         <input type="text" class="form-control" id="caps" name="pwd" onKeyPress="checkCapsLock(event)">
-
+          <p id="result_status2"> </p>
       </div>
     </div>
     <div class="form-group">
@@ -61,7 +62,7 @@ console.log(string1);
         </script></label>
       <div class="col-sm-10">
         <input type="text" class="form-control" id="small" name="pwd" onKeyPress="checkCapsLock(event)">
-
+        <p id="result_status3"> </p>
       </div>
     </div>
     <div class="form-group">
@@ -70,18 +71,20 @@ console.log(string1);
         </script></label>
       <div class="col-sm-10">
         <input type="text" class="form-control" id="mix" name="pwd" onKeyPress="checkCapsLock(event)">
-
+        <p id="result_status4"> </p>
       </div>
     </div>
       <div id="divWarningCapsLock" style="visibility:hidden" align="center"><h2><font color="red">Caps Lock is on.</font></h2></div>
   </form>
-
 </div>
 
-     <div>
-      <button class="button" onclick="check()" color="red">
+     <div align="center">
+      <button class="btn btn-success" onclick="check()" color="red">
             CHECK RESULTS
+
       </button>
+
+
     </div>
 
     <style type="text/css">
@@ -95,6 +98,9 @@ console.log(string1);
   height:1000px;
 
 }
+
+
+
     </style>
      <script language="JavaScript" type="text/javascript">
    //Check the keyboard in order to know wich key has been pressed by the user
@@ -122,30 +128,48 @@ console.log(string1);
             var count=0;
             if(email==string1){
                 count+=1;
+                document.getElementById( "result_status1" ).innerHTML = "&#9989;";
+
             }
+            else{
+                document.getElementById( "result_status1" ).innerHTML = "&#10060;";
+            }
+
             if(caps==string2){
                 count+=1;
+                document.getElementById( "result_status2" ).innerHTML = "&#9989;";
+
+            }
+            else{
+                document.getElementById( "result_status2" ).innerHTML = "&#10060;";
+
             }
              if(small==string3){
                 count+=1;
+                 document.getElementById( "result_status3" ).innerHTML = "&#9989;";
+
             }
+            else{
+                document.getElementById( "result_status3" ).innerHTML = "&#10060;";
+            }
+
              if(mix==string4){
                 count+=1;
+                 document.getElementById( "result_status4" ).innerHTML = "&#9989;";
+
             }
-           if(count<4){
-               alert("Your score : "+count+".. Try again!");
-           }
             else{
-                alert("YAY! YOU GOT ALL RIGHT!!");
+                document.getElementById( "result_status4" ).innerHTML = "&#10060;";
             }
-          location.reload();
+
+            if(count==4){
+                alert("YAY! YOU GOT ALL RIGHT!!");
+
+            }
+
         }
 
 
 </script>
-
-
 </body>
-
-
 </html>

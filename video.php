@@ -6,8 +6,16 @@
     <title>ASHA</title>
   </head>
   <body style="background-color: black;color: white; margin:5%">
+    <h1>Video Tutorials</h1>
     <center>
-      <h1>Video Tutorials</h1>
+
+      <h2>Warm up.</h2>
+      <video width="50%" controls>
+    <source src="7.mp4" type="video/mp4">
+  </video>
+  <br>
+  </center>
+  <center>
     <h2>Validation</h2>
     <video width="50%" controls>
   <source src="valid.mp4" type="video/mp4">
