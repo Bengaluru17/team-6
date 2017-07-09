@@ -67,6 +67,9 @@
 </video>
 <br>
 <h3><a href="fifth.php">Click here to practice.</a></h3>
+
+<h1>A link for excel learning</h1>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/3kNEv3s8TuA" frameborder="0" allowfullscreen></iframe>
 </center>
   </body>
 </html>
