@@ -3,11 +3,6 @@ include('connect.inc.php');
 
 $query="Select * from schoolform ";
 $result=mysqli_query($conn,$query);
-// $row=mysqli_fetch_row($result);
-
-
-
-
  ?>
 
 <!DOCTYPE html>
@@ -122,7 +117,5 @@ $result=mysqli_query($conn,$query);
           </div>
          </div>
         </div>
-        <?php
-        ?>
     </body>
 </html>

@@ -1,3 +1,4 @@
+
 <?php
 include('connect.inc.php');
 $flag=0;
@@ -29,5 +30,11 @@ if($row[4]!=$section)  $flag=1;
 if($row[5]!=$blood) $flag=1;
 if($row[6]!=$father)  $flag=1;
 if($row[7]!=$city)  $flag=1;
-if(!$flag) echo "Congrats";
+if(!$flag) header('Location:end.php');
+else{
+      $msg="error";
+      echo "<script type='text/javascript'> alert($msg) </script>";
+     header('Location:example1.php');
+
+}
 ?>
